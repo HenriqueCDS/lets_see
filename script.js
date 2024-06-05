@@ -11,12 +11,12 @@ window.addEventListener("DOMContentLoaded", function () {
     stagger: 0.1,
   })
     .to(".header-item-1", {
-      left: "12vw",
+      left: "0",
     })
     .to(
       ".header-item-2",
       {
-        right: "8vw",
+        right: "0",
       },
       "<"
     )
@@ -61,20 +61,23 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-    .to(
-      ".item-copy-wrapper p",
-      {
-        y: 0,
-        stagger: 0.05,
-      },
-      "<"
-    )
+   
     .to(
       "nav",
       {
         y: 0,
       },
       "<"
+    )
+    // Adicionar animação para mudar a imagem para background
+    .to(
+      ".item-main .item-img img",
+      {
+        width: "100vw", // Ajuste o tamanho da largura para cobrir a tela inteira
+        height: "100vh", // Ajuste o tamanho da altura para cobrir a tela inteira
+        zIndex: 1, // Coloque a imagem atrás de outros elementos
+        ease: "power3.inOut",
+      }
     );
 
   tl.play();
