@@ -11,13 +11,13 @@ window.addEventListener("DOMContentLoaded", function () {
     stagger: 0.1,
   })
     .to(".header-item-1", {
-      left: "0",
-      color:"white",
+      left: "150",
+     
     })
     .to(
       ".header-item-2",
       {
-        right: "0",
+        right: "190",
       },
       "<"
     )
@@ -55,13 +55,7 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-    .to(
-      ".header",
-      {
-        y: 120,
-      },
-      "<"
-    )
+    
     .to(
       "nav",
       {
@@ -73,11 +67,18 @@ window.addEventListener("DOMContentLoaded", function () {
     .to(
       ".item-main .item-img img",
       {
-        width: "100vw", // Ajuste o tamanho da largura para cobrir a tela inteira
-        height: "100vh", // Ajuste o tamanho da altura para cobrir a tela inteira
-        zIndex: 1, // Coloque a imagem atrás de outros elementos
+        width: "100vw", 
+        height: "100vh", 
+        zIndex: 1, 
         ease: "power3.inOut",
       }
+    )
+    .to(
+      ".header",
+      {
+        bottom: "0",
+      },
+      "<"
     );
 
   tl.play();
