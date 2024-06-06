@@ -8,16 +8,16 @@ window.addEventListener("DOMContentLoaded", function () {
 
   tl.to(".letter-wrapper", {
     y: 0,
-    stagger: 0.1,
+    stagger: 0.2,
   })
     .to(".header-item-1", {
-      left: "150",
+      left: "12%",
      
     })
     .to(
       ".header-item-2",
       {
-        right: "190",
+        right: "15%",
       },
       "<"
     )
@@ -25,8 +25,18 @@ window.addEventListener("DOMContentLoaded", function () {
       ".item-main .item-img img",
       {
         clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+
       },
       "<"
+    )
+    .to(
+      ".item-main .item-img img",
+      {
+        width: "100vw", 
+        height: "100vh", 
+        zIndex: 1, 
+        ease: "power3.inOut",
+      }
     )
     .to(".header-item-1", {
       left: 0,
@@ -40,18 +50,19 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-    .to(
-      ".item-main .item-img img",
-      {
-        scale: 1,
-      },
-      "<"
-    )
+   
     .to(
       ".item-side .item-img",
       {
         clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
         stagger: 0.1,
+      },
+      "<"
+    )
+    .to(
+      ".item-main .item-img img",
+      {
+        scale: 1,
       },
       "<"
     )
@@ -64,15 +75,7 @@ window.addEventListener("DOMContentLoaded", function () {
       "<"
     )
     // Adicionar animação para mudar a imagem para background
-    .to(
-      ".item-main .item-img img",
-      {
-        width: "100vw", 
-        height: "100vh", 
-        zIndex: 1, 
-        ease: "power3.inOut",
-      }
-    )
+    
     .to(
       ".header",
       {
