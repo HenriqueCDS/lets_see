@@ -6,6 +6,8 @@ window.addEventListener("DOMContentLoaded", function () {
   gsap.defaults({ duration: 1, ease: "power3.out" });
   const tl = gsap.timeline({ paused: true, delay: 0.5 });
 
+
+  
   tl.to(".letter-wrapper", {
     y: 0,
     stagger: 0.2,
@@ -29,19 +31,12 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-    .to(
-      ".item-main .item-img img",
-      {
-        width: "100vw", 
-        height: "100vh", 
-        zIndex: 1, 
-        ease: "power3.inOut",
-      }
-    )
+    
     .to(".header-item-1", {
       left: 0,
       scale: 1,
     })
+    
     .to(
       ".header-item-2",
       {
@@ -49,6 +44,19 @@ window.addEventListener("DOMContentLoaded", function () {
         scale: 1,
       },
       "<"
+    )
+    .to(
+      ".item-main .item-img img",
+      {
+        width: "100vw", 
+        height: "100vh", 
+        zIndex: 1, 
+        ease: "power3.inOut",
+        scale: 1,
+      },
+      "<"
+      
+
     )
    
     .to(
@@ -59,13 +67,7 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-    .to(
-      ".item-main .item-img img",
-      {
-        scale: 1,
-      },
-      "<"
-    )
+  
     
     .to(
       "nav",
