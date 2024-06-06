@@ -63,18 +63,16 @@ nav .contact {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
- 
+  overflow: hidden;
 }
 
 .items {
   width: 100%;
   display: flex;
   justify-content: center;
- 
+  align-items: center;
 }
 
 
@@ -82,6 +80,7 @@ nav .contact {
 .item {
   position: relative;
   top: 15vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -103,20 +102,22 @@ nav .contact {
   position: absolute;
   transform-origin: center center;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-self: start;
+  align-items: center;
+
 }
 
 .header-item {
   position: relative;
   display: flex;
-
   transform: scale(0.25);
 }
 
 .header-item-1 {
   left: 18vw;
+  
 }
 
 .header-item-2 {
@@ -126,7 +127,7 @@ nav .contact {
 .letter {
   color: var(--Neutral-Colors-White, #FFF);
   font-family: "OverusedGrotesk";
-  font-size: 22rem;
+  font-size: 25rem;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; 

@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
   })
     .to(".header-item-1", {
       left: "0",
+      color:"white",
     })
     .to(
       ".header-item-2",
@@ -57,11 +58,10 @@ window.addEventListener("DOMContentLoaded", function () {
     .to(
       ".header",
       {
-        bottom: "0",
+        y: 120,
       },
       "<"
     )
-   
     .to(
       "nav",
       {
