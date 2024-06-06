@@ -63,16 +63,18 @@ nav .contact {
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+ 
 }
 
 .items {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
 }
 
 
@@ -80,7 +82,6 @@ nav .contact {
 .item {
   position: relative;
   top: 15vh;
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -125,7 +126,7 @@ nav .contact {
 .letter {
   color: var(--Neutral-Colors-White, #FFF);
   font-family: "OverusedGrotesk";
-  font-size: 25.28325rem;
+  font-size: 22rem;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; 
