@@ -7,6 +7,10 @@
   font-family: 'OverusedGrotesk';
   src: local('OverusedGrotesk-Medium'), url('./assets/Fonts/OverusedGrotesk-Medium.otf') format('opentype');
 }
+@font-face {
+  font-family: 'OverusedGrotesk';
+  src: local('OverusedGrotesk-Medium'), url('./assets/Fonts/OverusedGrotesk-Medium.otf') format('opentype');
+}
 html,
 body {
   width: 100%;
@@ -29,6 +33,13 @@ a {
   color: #ffffff;
   font-size: 13.5px;
   font-weight: 500;
+  font-family: "OverusedGrotesk";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+
+
 }
 
 nav {
@@ -38,11 +49,11 @@ nav {
   padding: 1em;
   display: flex;
   z-index: 1;
+
+  
 }
 
-nav .logo a {
-  font-weight: bold;
-}
+
 
 nav > div {
   flex: 1;
@@ -52,6 +63,8 @@ nav .nav-items {
   display: flex;
   gap: 1em;
   justify-content: center;
+ 
+
 }
 
 nav .contact {
@@ -140,6 +153,7 @@ nav .contact {
     display: none;
   }
 
+ 
   .header {
     bottom: 45%;
   }
@@ -155,4 +169,14 @@ nav .contact {
   .header-item-2 {
     right: 11vw;
   }
+}
+
+@media (max-width: 900px) {
+ 
+img {
+
+  object-fit: cover;
+  object-position: 60%;
+}
+
 }

@@ -84,7 +84,8 @@ window.addEventListener("DOMContentLoaded", function () {
         bottom: "0",
       },
       "<"
-    );
+    )
 
+  
   tl.play();
 });
