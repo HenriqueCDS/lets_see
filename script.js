@@ -36,6 +36,7 @@ function updateAnimations() {
     .to(".header-item-1", {
       left: 0,
       scale: 1,
+      stagger:0.1,   
     })
     
     .to(
@@ -43,7 +44,8 @@ function updateAnimations() {
       {
         right: 0,
         scale: 1,
-        stagger:2,   
+        stagger:0.1,   
+
       },
       "<"
     )
@@ -55,7 +57,7 @@ function updateAnimations() {
         zIndex: 1, 
         ease: "power3.inOut",
         scale: 1,
-        stagger:2,   
+          
 
       },
       "<"
