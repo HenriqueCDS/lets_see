@@ -36,19 +36,20 @@ function updateAnimations() {
     .to(".header-item-1", {
       left: 0,
       scale: 1,
-      stagger:0.1,   
+      stagger: 0,   
     })
-    
+   
     .to(
       ".header-item-2",
       {
         right: 0,
         scale: 1,
-        stagger:0.1,   
+        stagger:0,   
 
       },
       "<"
     )
+    
     .to(
       ".item-main .item-img img",
       {
@@ -57,14 +58,13 @@ function updateAnimations() {
         zIndex: 1, 
         ease: "power3.inOut",
         scale: 1,
-          
+        stagger: 10,
 
       },
       "<"
       
 
     )
-   
    
   
     
