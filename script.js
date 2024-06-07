@@ -1,25 +1,26 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.set("nav", { y: -100 });
   gsap.set(".letter-wrapper", { y: 400 });
-  gsap.set(".item-copy-wrapper p", { y: 50 });
 
   gsap.defaults({ duration: 1, ease: "power3.out" });
   const tl = gsap.timeline({ paused: true, delay: 0.5 });
 
+function updateAnimations() {
 
-  
+  const isMobile = window.innerWidth <= 900;
+
   tl.to(".letter-wrapper", {
     y: 0,
     stagger: 0.2,
   })
     .to(".header-item-1", {
-      left: "12%",
+      left: isMobile ?  "1vw" : "14vw",
      
     })
     .to(
       ".header-item-2",
       {
-        right: "15%",
+        right:isMobile ? "1vw" : "16vw",
       },
       "<"
     )
@@ -42,6 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
       {
         right: 0,
         scale: 1,
+        stagger:2,   
       },
       "<"
     )
@@ -53,20 +55,15 @@ window.addEventListener("DOMContentLoaded", function () {
         zIndex: 1, 
         ease: "power3.inOut",
         scale: 1,
+        stagger:2,   
+
       },
       "<"
       
 
     )
    
-    .to(
-      ".item-side .item-img",
-      {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-        stagger: 0.1,
-      },
-      "<"
-    )
+   
   
     
     .to(
@@ -85,7 +82,13 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       "<"
     )
-
-  
   tl.play();
+  
+  }
+
+  updateAnimations();
+
+  // Update animations on window resize
+  window.addEventListener("resize", updateAnimations);
+
 });
