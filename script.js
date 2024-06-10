@@ -20,7 +20,7 @@ function updateAnimations() {
     .to(
       ".header-item-2",
       {
-        right:isMobile ? "10vw" : "16vw",
+        right:isMobile ? "10vw" : "15vw",
       },
       "<"
     )
