@@ -23,8 +23,8 @@ body {
 
 img {
 
-  width: 400px;
-  height: 200px;
+  width: 29vw;
+  height: 31vh;
   object-fit: cover;
 }
 
@@ -180,7 +180,8 @@ nav .contact {
 @media (max-width: 900px) {
  
 img {
-
+  width: 35;
+  height: 80vh;
   object-fit: cover;
   object-position: 75%;
 }

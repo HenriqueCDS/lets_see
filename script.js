@@ -14,13 +14,13 @@ function updateAnimations() {
     stagger: 0.2,
   })
     .to(".header-item-1", {
-      left: isMobile ?  "1vw" : "14vw",
+      left: isMobile ?  "1vw" : "10.5vw",
      
     })
     .to(
       ".header-item-2",
       {
-        right:isMobile ? "1vw" : "16vw",
+        right:isMobile ? "10vw" : "16vw",
       },
       "<"
     )
