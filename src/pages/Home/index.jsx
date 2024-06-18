@@ -3,7 +3,7 @@ import "./home.css";
 import React, { useEffect, useCallback } from 'react';
 import gsap from 'gsap';
 
-import imgBackground from "../../assets/img/image.png"
+import imgBackground from "../../assets/img/image.png";
 export default function Home() {
 
 
