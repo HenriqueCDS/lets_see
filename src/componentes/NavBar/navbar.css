@@ -1,0 +1,39 @@
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding:1rem;
+    z-index: 1;
+  
+  }
+  
+  
+  
+  nav > div {
+    flex: 1;
+  }
+  
+  nav .nav-items {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+   
+  
+  }
+  nav .nav-items a{
+    font-size: 1.1rem;
+  
+  }
+  nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+  nav .contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  

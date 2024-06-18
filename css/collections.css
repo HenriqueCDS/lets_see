@@ -1,5 +1,3 @@
-
-
 .container-collections{
  
     width: 100%;
@@ -12,11 +10,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    
-  
   }
-
-
 .content-titule{
     margin-top: 5.4375rem;
     margin-bottom: 6rem;
@@ -40,8 +34,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- 
- 
   width: 103px;
   height: 102px;
   margin-right: 7.9375rem;
@@ -50,7 +42,7 @@
 .content-selector li span{
   color: rgb(75, 75, 75);
   text-align: center;
-  font-family: "OverusedGroteskLight";
+  font-family: "OverusedGrotesk";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -66,7 +58,7 @@
 .content-selector .selector-img .text{
   display: flex;
   flex-direction: column;
-  font-family: "OverusedGroteskLight";
+  font-family: "OverusedGrotesk";
   font-size: 1rem;
   font-style: normal;
   margin-bottom: 1.125rem;
@@ -97,7 +89,7 @@
   display: flex;
   flex-direction: column;
  
-  font-family: "OverusedGroteskLight";
+  font-family: "OverusedGrotesk";
   font-size: 1.25rem;
   font-style: normal;
 
