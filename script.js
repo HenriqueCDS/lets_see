@@ -1,14 +1,17 @@
 window.addEventListener("DOMContentLoaded", function () {
-  gsap.set("nav", { y: -100 });
-  gsap.set(".letter-wrapper", { y: 400 });
-
-  gsap.defaults({ duration: 1, ease: "power3.out" });
-  const tl = gsap.timeline({ paused: true, delay: 0.5 });
+ 
+  console.log("DOMContentLoaded");
+  updateAnimations();
+  window.addEventListener("resize", updateAnimations);
+  
+});
 
 function updateAnimations() {
-
+  gsap.set("nav", { y: -100 });
+  gsap.set(".letter-wrapper", { y: 400 });
+  gsap.defaults({ duration: 1, ease: "power3.out" });
+  const tl = gsap.timeline({ paused: true, delay: 0.5 });
   const isMobile = window.innerWidth <= 900;
-
   tl.to(".letter-wrapper", {
     y: 0,
     stagger: 0.2,
@@ -31,14 +34,12 @@ function updateAnimations() {
 
       },
       "<"
-    )
-    
+    ) 
     .to(".header-item-1", {
       left: 0,
       scale: 1,
       stagger: 0,   
     })
-   
     .to(
       ".header-item-2",
       {
@@ -49,7 +50,6 @@ function updateAnimations() {
       },
       "<"
     )
-    
     .to(
       ".item-main .item-img img",
       {
@@ -62,20 +62,7 @@ function updateAnimations() {
 
       },
       "<"
-      
-
     )
-   
-  
-    
-    .to(
-      "nav",
-      {
-        y: 0,
-      },
-      "<"
-    )
-    // Adicionar animação para mudar a imagem para background
     
     .to(
       ".header",
@@ -85,12 +72,38 @@ function updateAnimations() {
       "<"
     )
   tl.play();
-  
+  animateNav();
+
   }
 
-  updateAnimations();
+  function animateNav() {
+    gsap.to("nav", {
+      y: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
+  }
 
-  // Update animations on window resize
-  window.addEventListener("resize", updateAnimations);
+function pageTransition() {
+  var tl = gsap.timeline();
 
-});
+  tl.to(".transition", {
+    duration: 1,
+    scaleY: 1,
+    transformOrigin: "bottom",
+    ease: "power4.inOut",
+  });
+
+  tl.to(".transition", {
+    duration: 1,
+    scaleY: 0,
+    transformOrigin: "top",
+    ease: "power4.inOut",
+    delay: 0.2,
+  });
+}
+
+
+
+
+
