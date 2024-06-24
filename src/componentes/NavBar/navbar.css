@@ -1,15 +1,14 @@
-
+.mobile{
+ display: none
+}
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    padding:1rem;
-    z-index: 1;
-  
-  }
-  
-  
+  position: fixed;
+  top: 0;
+  width: calc(100% - 2em); /* Adiciona largura extra */
+  padding: 1em; /* Adiciona padding */
+  display: flex;
+  z-index: 1;
+}
   
   nav > div {
     flex: 1;
@@ -36,4 +35,31 @@ nav {
     justify-content: flex-end;
     gap: 1em;
   }
+
+  @media (max-width: 800px) {
+      .mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .desktop{
+        display: none;
+      }
+      nav .nav-items {
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+      }
+    
+      .list-link-mobile{
+        display: none;
+        list-style-type: none;
+        justify-content: flex-end; 
+      }
+      .list-link-mobile ul{
+        list-style-type: none;
+      }
+     
+  }
+
   

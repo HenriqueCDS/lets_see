@@ -1,0 +1,28 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width:55%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 45%;
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    width:60%;
+  }
+  
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+
+}
+
+
+

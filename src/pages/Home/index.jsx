@@ -53,8 +53,8 @@ export default function Home() {
       .to(
         '.item-main .item-img img',
         {
-          width: '100vw',
-          height: '100vh',
+          width:'100vw',
+          height: '101vh',
           zIndex: 1,
           ease: 'power3.inOut',
           scale: 1,
@@ -90,7 +90,7 @@ export default function Home() {
       transformOrigin: 'bottom',
       ease: 'power4.inOut',
     });
-
+    
     tl.to('.transition', {
       duration: 1,
       scaleY: 0,
@@ -101,54 +101,42 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    console.log('DOMContentLoaded');
     updateAnimations();
-
     window.addEventListener('resize', updateAnimations);
-
     return () => {
       window.removeEventListener('resize', updateAnimations);
     };
   }, [updateAnimations]);
 
-
-
-
-
-
-
-
-
     return (
       <section>
         <NavBar/>
-            <div class="container" data-barba="wrapper">
-            <div class="content" data-barba="container" data-barba-namespace="index">
-            
-                <div class="items">
-                    <div class="item-main">
-                        <div class="item-img">
+            <div className="container" >
+            <div className="content">
+                <div className="items">
+                    <div className="item-main">
+                        <div className="item-img">
                             <img src={imgBackground} alt="lets see" />
                         </div>
                     </div>
                 </div>
 
-                <div class="header">
-                    <div class="header-item header-item-1">
-                        <div class="letter"><div class="letter-wrapper">L</div></div>
-                        <div class="letter"><div class="letter-wrapper">e</div></div>
-                        <div class="letter"><div class="letter-wrapper">t’</div></div>
-                        <div class="letter"><div class="letter-wrapper">s</div></div>
+                <div className="header">
+                    <div className="header-item header-item-1">
+                        <div className="letter"><div className="letter-wrapper">L</div></div>
+                        <div className="letter"><div className="letter-wrapper">e</div></div>
+                        <div className="letter"><div className="letter-wrapper">t’</div></div>
+                        <div className="letter"><div className="letter-wrapper">s</div></div>
                     </div>
-                    <div class="header-item header-item-2">
-                        <div class="letter"><div class="letter-wrapper">&nbsp;</div></div>
-                        <div class="letter"><div class="letter-wrapper">s</div></div>
-                        <div class="letter"><div class="letter-wrapper">e</div></div>
-                        <div class="letter"><div class="letter-wrapper">e</div></div>
+                    <div className="header-item header-item-2">
+                        <div className="letter"><div className="letter-wrapper">&nbsp;</div></div>
+                        <div className="letter"><div className="letter-wrapper">s</div></div>
+                        <div className="letter"><div className="letter-wrapper">e</div></div>
+                        <div className="letter"><div className="letter-wrapper">e</div></div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
       </section>
     );
   }
