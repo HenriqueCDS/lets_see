@@ -14,8 +14,6 @@ export default function NavBar() {
                 </div>
                 <div className="nav-items">
                     <Link to={"/"}>Let’s see</Link>
-                    <Menu />
-                    
                 </div>
                 <div className="contact">
                     <Link to={"/"}>Services</Link>

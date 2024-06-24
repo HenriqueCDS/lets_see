@@ -59,6 +59,20 @@ nav {
       .list-link-mobile ul{
         list-style-type: none;
       }
+      .menu button {
+ 
+        outline: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: transparent;
+      }
+      
      
   }
 
