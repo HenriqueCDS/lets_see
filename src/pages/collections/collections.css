@@ -136,7 +136,15 @@
 
   border-radius: 4.875rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .container-collections {
+    width: auto;
+  }
+  .content-titule h1 {
+    font-family: "OverusedGroteskLight";
+    font-size: 4rem;
+  
+  }
   .content-selector .selector-img .image .image-button{
     padding:  0px;
   }
@@ -157,7 +165,7 @@
   }
 }
 @media (max-width: 800px) {
-  
+ 
   .content-selector{
     display: flex;
     flex-direction: column;
@@ -175,9 +183,7 @@
   .content-selector ul {
     margin: 0px;
     width: 156px;
- 
-   
-   
+
   }
   .content-selector ul li  span {
     
@@ -194,6 +200,10 @@
     max-height: 21.359375rem;
     position: relative;
     
+ }
+ .content-titule {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
  }
 }
 
